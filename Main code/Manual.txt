@@ -1,1 +1,35 @@
-How to use this tool:
+****  MANUAL FOR TIME RESOLVED SPECTROSCOPY TOOL  ****
+
+1) Loading a file:
+  - LOAD FILE
+  - Choose a 2d matrix file, a time-step file and a wavelength file, respectively. Order of choice is important.
+  
+2) Subtracting a background:
+  - Choose number of steps before 0fs to average and subtract from the measurements.
+  - Subtract background
+  - An averaged background is shown in a separate figure
+  
+3) Axes limits:
+  - Choose the proper time, wavelength and z-axis scales.
+  - Figures refresh automatically
+  
+4) Temporal and spectral dynamics:
+  - Write the wavelength (for dynamics) or time in fs (for spectra) and press Plot Cut / Plot Spec
+  - Alternative way: Click on 2D - choose wavelength/time by clicking on a 2D plot and pressing enter
+  - Alternative way #2: move the slider on the left/top of 2D plot
+  - Press Multiple cuts/spectra, Click on 2D multiple times and press enter. Multiple cuts/spectra shows on the figure
+  
+5) Cutting a matrix:
+  - Set the boundary wavelengths for cutting the matrix
+  - Press CUT
+  - Figures refresh automatically
+  
+6) Dechirping a matrix:
+  - Works best if background subtracted and matrix cut
+  - Tighten the z-axis scale to see the chirp clearer
+  - Press Chirp correction
+  - Choose chirp points by clicking on a chirp on a 2D plot
+  - Press enter
+  - Polynomial is fit automatically and a new figure with dechirped matrix shows
+  - Press Save to save dechirped matrix in a .txt file
+  - If not satisfied with chirp correction, press Chirp correction again and repeat steps
