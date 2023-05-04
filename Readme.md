@@ -6,11 +6,14 @@ Ultrafast spectroscopy tool can be used to explore ultrafast spectroscopy measur
 
 1) Matrix plotting
 
-2) Time dynamics analysis
+2) Matrix dechirping
+   - Manual choice of points on a chirp (by clicking)
+   - fitting a third order polynomial on a chirp
+   - dechirping and saving a chirp corrected matrix
 
-3) Spectral dynamics analysis
+3) Time dynamics analysis
 
-4) Matrix dechirping
+4) Spectral dynamics analysis
 
 5) Noise removal by averaging
 
