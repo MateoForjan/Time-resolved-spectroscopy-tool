@@ -1,6 +1,6 @@
 ## Ultrafast spectroscopy tool
 
-![Github1](https://user-images.githubusercontent.com/92934177/236311605-cc79df97-854b-48b9-ae2a-cb926a316dfc.png)
+![Ultrafast spectroscopy tool](https://user-images.githubusercontent.com/92934177/236426243-8df48254-adc1-4407-bc1f-5b9dac59323e.png)
 
 Ultrafast spectroscopy tool can be used to explore ultrafast spectroscopy measurements in great detail. Tool provides the following:
 
