@@ -21,6 +21,7 @@ Ultrafast spectroscopy tool can be used to explore ultrafast spectroscopy measur
 
 ![Total_1](https://user-images.githubusercontent.com/92934177/236311388-8cb3abc9-eed6-4e98-939f-dc79b8da0a56.png)
 
+![Total_2](https://user-images.githubusercontent.com/92934177/236427276-c5af121b-c6fd-4f70-a305-bc644b87c9c8.png)
 
 Copyright (c) 2022 Mateo Forjan
 
