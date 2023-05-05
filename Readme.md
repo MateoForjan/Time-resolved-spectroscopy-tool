@@ -18,10 +18,9 @@ Ultrafast spectroscopy tool can be used to explore ultrafast spectroscopy measur
 5) Noise removal by averaging
 
 
+![Total_3](https://user-images.githubusercontent.com/92934177/236427488-da874f26-2a03-4cc4-ad8b-ad255595ece8.png)
 
-![Total_1](https://user-images.githubusercontent.com/92934177/236311388-8cb3abc9-eed6-4e98-939f-dc79b8da0a56.png)
 
-![Total_2](https://user-images.githubusercontent.com/92934177/236427276-c5af121b-c6fd-4f70-a305-bc644b87c9c8.png)
 
 Copyright (c) 2022 Mateo Forjan
 
