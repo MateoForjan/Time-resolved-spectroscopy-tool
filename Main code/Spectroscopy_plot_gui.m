@@ -1,27 +1,24 @@
 function varargout = Spectroscopy_plot_gui(varargin)
 % SPECTROSCOPY_PLOT_GUI MATLAB code for Spectroscopy_plot_gui.fig
-%      SPECTROSCOPY_PLOT_GUI, by itself, creates a new SPECTROSCOPY_PLOT_GUI or raises the existing
-%      singleton*.
-%
-%      H = SPECTROSCOPY_PLOT_GUI returns the handle to a new SPECTROSCOPY_PLOT_GUI or the handle to
-%      the existing singleton*.
-%
-%      SPECTROSCOPY_PLOT_GUI('CALLBACK',hObject,eventData,handles,...) calls the local
-%      function named CALLBACK in SPECTROSCOPY_PLOT_GUI.M with the given input arguments.
-%
-%      SPECTROSCOPY_PLOT_GUI('Property','Value',...) creates a new SPECTROSCOPY_PLOT_GUI or raises the
-%      existing singleton*.  Starting from the left, property value pairs are
-%      applied to the GUI before Spectroscopy_plot_gui_OpeningFcn gets called.  An
-%      unrecognized property name or invalid value makes property application
-%      stop.  All inputs are passed to Spectroscopy_plot_gui_OpeningFcn via varargin.
-%
-%      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
-%      instance to run (singleton)".
-%
-% See also: GUIDE, GUIDATA, GUIHANDLES
 
-% Edit the above text to modify the response to help Spectroscopy_plot_gui
+%----------------------------------------------------------
+% ***For extra description see the manual file.***
+  
+% Ultrafast spectroscopy tool can be used to explore ultrafast spectroscopy measurements in great detail. Tool provides the following:
 
+% 1) Matrix plotting
+
+% 2) Matrix dechirping
+%    -manual choice of points on a chirp (by clicking)
+%    -fitting a third order polynomial on a chirp
+%    -dechirping and saving a chirp corrected matrix
+
+% 3) Time dynamics analysis
+
+% 4) Spectral dynamics analysis
+
+% 5) Noise removal by averaging
+%----------------------------------------------------------
 % Last Modified by GUIDE v2.5 14-Sep-2022 17:09:54
 
 % Begin initialization code - DO NOT EDIT
@@ -375,7 +372,7 @@ end
 %FUNCTION TO PLOT DYNAMICS AFTER CLICKING ON A 2D PLOT POINT
 function Click_cut_Callback(~, ~, handles)
 
-[click_x, click_y] = getpts(handles.axes2); %biranje tocaka mišem
+[click_x, click_y] = getpts(handles.axes2); %biranje tocaka miÂšem
 
 %ako je multiple curves oznaceno plotaj ih sve, inace samo prvi klik
 
@@ -443,7 +440,7 @@ set(handles.Spec_time2,'String', [num2str(round(time1/1000)), 'ps']);
 % --- Executes on button press in Spectral_click.
 function Spectral_click_Callback(~, ~, handles)
 
-[click_x, click_y] = getpts(handles.axes2); %biranje tocaka mišem
+[click_x, click_y] = getpts(handles.axes2); %biranje tocaka miÂšem
 
 % time1 = click_x(end);
 
@@ -507,10 +504,10 @@ global matrica
 
 % plot2d(handles);
 
-[Chirp_x, Chirp_y] = getpts(handles.axes2); %biranje tocaka mišem
+[Chirp_x, Chirp_y] = getpts(handles.axes2); %biranje tocaka miÂšem
 scatter(Chirp_x,Chirp_y,250,'x','MarkerEdgeColor',[1 1 1],'MarkerFaceColor',[0 0 0],'LineWidth',2);
 hold on
-% plot(Chirp_x,Chirp_y,'LineWidth',2); %plot koji spaja križiæe koji se dobiju nakon klikanja
+% plot(Chirp_x,Chirp_y,'LineWidth',2); %plot koji spaja kriÂžiÃ¦e koji se dobiju nakon klikanja
 hold on;
 
 yfit1 = fittype('a0+a1*x+a2*x^2+a3*x^3','ind','x');
