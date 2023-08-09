@@ -95,6 +95,12 @@ Wavelength=dlmread(lambdafajl);
 Time(end) = [];
 Transient(:,end) = [];
 
+% IF THE WAVELENGTHS ARE DESCENDING, FLIP THE MATRIX AND THE WAVELENGHTS
+if Wavelength(end)<Wavelength(1)
+    Transient = flip(Transient, 1);
+    Wavelength = flip(Wavelength);
+end
+
 % SETTING FILE PATH AND FILE NAME TEXTBOX VALUE
 current_folder = pwd;
 set(handles.statictext1, 'String', current_folder);
